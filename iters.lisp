@@ -1,11 +1,11 @@
 (in-package #:sja)
 
 (defun iter-filter (iter test)
-  (let ((item (funcall item)))
+  (let ((item (funcall iter)))
     (defun inner ()
       (if (and item (funcall test item))
 	  (return-from inner item)
-	  (setf item (funcall item))))))
+	  (setf item (funcall iter))))))
 
 (defun take-n (iter n)
   (let ((count n))
@@ -46,6 +46,7 @@
   (let ((res))
     (dolist (l lst)
       (if (<= l limit) (push l res) (return-from sorted_le (nreverse res))))))
+
 
 (defun chain (&rest iters)
   (lambda ()

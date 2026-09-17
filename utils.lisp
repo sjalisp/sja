@@ -1,4 +1,8 @@
 
+
+(defun take (n list)
+  (loop repeat n for x in list collect x))
+
 (defun any-satisfy (lst tst)
   (dolist (l lst)
     (if (funcall tst l)

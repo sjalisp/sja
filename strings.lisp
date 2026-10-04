@@ -19,7 +19,7 @@
 (defun prefix-last (s sep)
   (let* ((where (position sep s :from-end t)))
     (if (not (null where))
-	(values (subseq 0 where) (subseq s (1+ where))))))
+	(values (subseq s 0 where) (subseq s (1+ where))))))
 
 (defun before-and-last (lst)
   (let ((rev (reverse lst)))

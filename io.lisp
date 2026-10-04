@@ -92,10 +92,10 @@
   (read-int buffer :sz 2 :signed t))
 
 (defun u32 (buffer)
-  (read-int xuffer 4))
+  (read-int buffer :sz 4))
 
 (defun s32 (buffer)
-  (read-int buffer 4 :signed t))
+  (read-int buffer :sz 4 :signed t))
 
 
 

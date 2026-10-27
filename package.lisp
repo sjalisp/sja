@@ -9,4 +9,8 @@
    :dict-keys
    :dict-values
    :unique-string-key
-   :update-hash))
+   :update-hash
+   :lru-cache
+   :cache-insert
+   :cache-get
+   :cache-remove))

@@ -1,0 +1,12 @@
+# compiled output -- never committed, and ASDF caches these under
+# ~/.cache/common-lisp anyway, so none should sit in the tree
+*.fasl
+*.fas
+*.lib
+*.x86f
+
+# editor artifacts
+*~
+.#*
+\#*#
+.DS_Store
